@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Foxbite Learning - Premium Smart Education Platform</title>
+    <meta name="description" content="Eligibility-based education platform for serious students. Structured learning for competitive and board exam mastery with 98.4% success rate.">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="logo.png" type="image/png">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Desktop Sidebar -->
+    <nav class="sidebar-nav" id="sidebarNav" role="navigation" aria-label="Main navigation">
+        <div class="sidebar-brand">
+            <img src="logo.png" alt="Foxbite Learning Logo" class="brand-logo">
+            <span class="brand-text">FOXBITE</span>
+        </div>
+
+        <ul class="sidebar-menu">
+            <li>
+                <a href="#" class="sidebar-link active" data-section="home" aria-current="page">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                        <polyline points="9 22 9 12 15 12 15 22"/>
+                    </svg>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="sidebar-link" data-section="courses">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                    </svg>
+                    <span>Courses</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="sidebar-link" data-section="why">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                    <span>Why Us</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="sidebar-link" data-section="reviews">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                    <span>Reviews</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="sidebar-link" data-section="faq">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                        <line x1="12" y1="17" x2="12.01" y2="17"/>
+                    </svg>
+                    <span>FAQ</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="sidebar-cta">
+            <a href="#courses" class="btn-sidebar-cta">
+                <span>Explore Courses</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"/>
+                    <polyline points="12 5 19 12 12 19"/>
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
+        <a href="#" class="mobile-nav-item active" data-section="home">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            </svg>
+            <span>Home</span>
+        </a>
+        <a href="#" class="mobile-nav-item" data-section="courses">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+            </svg>
+            <span>Courses</span>
+        </a>
+        <a href="#" class="mobile-nav-item" data-section="why">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            <span>Why Us</span>
+        </a>
+        <a href="#" class="mobile-nav-item" data-section="reviews">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+            <span>Reviews</span>
+        </a>
+        <a href="#" class="mobile-nav-item" data-section="faq">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+            </svg>
+            <span>FAQ</span>
+        </a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="section hero-section">
+            <div class="container">
+                <!-- Mobile Logo (shows only on mobile) -->
+                <div class="mobile-hero-logo">
+                    <img src="logo.png" alt="Foxbite Learning" class="mobile-logo-img">
+                    <span class="mobile-logo-text">FOXBITE</span>
+                </div>
+
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>2,000+ Active Students</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Best Revision notes<br>
+                    for <span class="gradient-text">students</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Foxbite is an WhatsAPP-based education community built for students who take their future seriously. No distractions. No shortcuts. Just structured, easy smart learning notes designed for competitive and board exam mastery.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#courses" class="btn btn-primary">
+                        <span>Free notes</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                            <polyline points="12 5 19 12 12 19"/>
+                        </svg>
+                    </a>
+                    <a href="#reviews" class="btn btn-secondary">
+                        <span>Show Reviews</span>
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-value">98.4%</div>
+                        <div class="stat-label">Success Rate</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-value">2,000+</div>
+                        <div class="stat-label">Active Students</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-value">50+</div>
+                        <div class="stat-label">Expert Mentors</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses" class="section courses-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Groups</h2>
+                    <p class="section-subtitle">Structured WhatsApp groups where you will get FREE study notes + Revision materials </p>
+                </div>
+
+                <div class="courses-grid">
+                    <!-- Plus Two Course -->
+                    <article class="course-card" data-course="plus-two">
+                        <div class="course-header">
+                            <div class="course-icon plus-two-icon">+2</div>
+                            <span class="course-badge">Mostly joined</span>
+                        </div>
+                        <h3 class="course-title">PLUS-TWO NOTES</h3>
+                        <p class="course-description">
+                            Structured Plus Two Notes with clear concepts, Easy to understand, and rigorous practice sessions to help students excel in board exams.
+                        </p>
+                        <ul class="course-features">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Easy Notes</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>100+ Study Materials</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Exam Prediction QnA</span>
+                            </li>
+                        </ul>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="price-label">Just for</span>
+                                <span class="price-value">FREE<span class="price-period">/yr</span></span>
+                            </div>
+                            <a href="https://chat.whatsapp.com/IdBp6nLpmqU2ecRIgVaJxC?mode=hqrt1" target="_blank" rel="noopener noreferrer" class="btn-course" data-enroll-link="https://chat.whatsapp.com/IdBp6nLpmqU2ecRIgVaJxC?mode=hqrt1">
+                                <span>Join Now</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                    <polyline points="12 5 19 12 12 19"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- PSC Course -->
+                    <article class="course-card" data-course="psc">
+                        <div class="course-header">
+                            <div class="course-icon psc-icon">+1</div>
+                            <span class="course-badge">Christmas Exam speical</span>
+                        </div>
+                        <h3 class="course-title">PLUS-ONE NOTES</h3>
+                        <p class="course-description">
+                            Easy Plus-One Notes with clear concepts, Easy to understand, and rigorous practice sessions to help students excel in board exams
+                        </p>
+                        <ul class="course-features">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Exam oriented notes</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>100+ Study materials</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Prediction QnA</span>
+                            </li>
+                        </ul>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="price-label">Just for</span>
+                                <span class="price-value">FREE<span class="price-period">/yr</span></span>
+                            </div>
+                            <a href="https://chat.whatsapp.com/Ly8cZTeWkFzEe7IRYsZw9s?mode=hqrt1" target="_blank" rel="noopener noreferrer" class="btn-course" data-enroll-link="https://chat.whatsapp.com/Ly8cZTeWkFzEe7IRYsZw9s?mode=hqrt1">
+                                <span>Join Now</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                    <polyline points="12 5 19 12 12 19"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- SSC Course -->
+                    <article class="course-card" data-course="ssc">
+                        <div class="course-header">
+                            <div class="course-icon ssc-icon">H</div>
+                            <span class="course-badge">Special batch</span>
+                        </div>
+                        <h3 class="course-title">For Humanities and Commerce</h3>
+                        <p class="course-description">
+                            Crash batch for Highersecondary Humanities and Commerce students in kerala .
+                        </p>
+                        <ul class="course-features">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Revision-Specific Prep</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>All study materials</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Eclussive easy notes</span>
+                            </li>
+                        </ul>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="price-label">Just</span>
+                                <span class="price-value">FREE<span class="price-period">/yr</span></span>
+                            </div>
+                            <a href="https://tally.so/r/Gx6v6Q" target="_blank" rel="noopener noreferrer" class="btn-course" data-enroll-link="https://tally.so/r/Gx6v6Q">
+                                <span>Enroll Now</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                    <polyline points="12 5 19 12 12 19"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Board Exam Course -->
+                    <article class="course-card" data-course="board">
+                        <div class="course-header">
+                            <div class="course-icon board-icon">SSLC</div>
+                            <span class="course-badge">New Launch</span>
+                        </div>
+                        <h3 class="course-title">SSLC Exam special</h3>
+                        <p class="course-description">
+                            Complete kerala sylabus 10th preparation with conceptual depth, structured revision cycles, and continuous doubt resolution.
+                        </p>
+                        <ul class="course-features">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>New Sylabus</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Revision notes</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Easy Mind-maps</span>
+                            </li>
+                        </ul>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="price-label">Just</span>
+                                <span class="price-value">FREE<span class="price-period">/yr</span></span>
+                            </div>
+                            <a href="https://tally.so/r/Gx6ljO" target="_blank" rel="noopener noreferrer" class="btn-course" data-enroll-link="https://tally.so/r/Gx6ljO">
+                                <span>Enroll Now</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                    <polyline points="12 5 19 12 12 19"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Section -->
+        <section id="why" class="section why-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Why Foxbite Works</h2>
+                    <p class="section-subtitle">We've removed everything that doesn't serve your learning goals</p>
+                </div>
+
+                <div class="why-grid">
+                    <article class="why-card">
+                        <div class="why-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                            </svg>
+                        </div>
+                        <h3>Affordable Pricing</h3>
+                        <p>No hidden fees, no pressure tactics. Transparent pricing that respects student budgets while delivering premium education.</p>
+                    </article>
+
+                    <article class="why-card">
+                        <div class="why-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <h3>Expert Faculty</h3>
+                        <p>Teachers with 10+ years of experience who understand both subject mastery and exam psychology. They've guided thousands to success.</p>
+                    </article>
+
+                    <article class="why-card">
+                        <div class="why-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                            </svg>
+                        </div>
+                        <h3>Smart Systems</h3>
+                        <p>Adaptive learning paths, intelligent doubt resolution, progress tracking, and personalized revision schedules powered by data.</p>
+                    </article>
+
+                    <article class="why-card">
+                        <div class="why-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                            </svg>
+                        </div>
+                        <h3>Test Series</h3>
+                        <p>All-India level test series with detailed analytics, peer comparison, and targeted improvement recommendations after every attempt.</p>
+                    </article>
+
+                    <article class="why-card">
+                        <div class="why-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                        </div>
+                        <h3>Structured Learning</h3>
+                        <p>Clear roadmaps, milestone tracking, and defined outcomes. You'll always know where you are and what comes next in your journey.</p>
+                    </article>
+
+                    <article class="why-card">
+                        <div class="why-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            </svg>
+                        </div>
+                        <h3>Personal Mentorship</h3>
+                        <p>Dedicated mentors who track your progress, identify weak areas, and provide strategic guidance beyond just subject teaching.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="section reviews-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Student Voices</h2>
+                    <p class="section-subtitle">Real feedback from students who've transformed their preparation with Foxbite</p>
+                </div>
+
+                <div class="reviews-grid">
+                    <article class="review-card">
+                        <div class="review-header">
+                            <img src="https://i.pravatar.cc/150?img=1" alt="Anjali" class="reviewer-avatar" loading="lazy" width="48" height="48">
+                            <div class="reviewer-info">
+                                <h4>Anjali Rajendran</h4>
+                                <p>CUET 2024 · Top 500 AIR</p>
+                            </div>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                        <p class="review-text">
+                            "The structure here is different. No chaos, no marketing noise. Just focused learning and teachers who actually care about your progress. Changed my entire approach to studying."
+                        </p>
+                        <div class="review-meta">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Verified Student</span>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-header">
+                            <img src="https://i.pravatar.cc/150?img=12" alt="Rahul" class="reviewer-avatar" loading="lazy" width="48" height="48">
+                            <div class="reviewer-info">
+                                <h4>Rahul Kumar</h4>
+                                <p>KEAM 2024 · Rank 145</p>
+                            </div>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                        <p class="review-text">
+                            "Foxbite's personalized mentorship made all the difference. My mentor identified my weak topics and created a custom study plan. Best decision of my preparation journey."
+                        </p>
+                        <div class="review-meta">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Verified Student</span>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-header">
+                            <img src="https://i.pravatar.cc/150?img=5" alt="Priya" class="reviewer-avatar" loading="lazy" width="48" height="48">
+                            <div class="reviewer-info">
+                                <h4>Priya Menon</h4>
+                                <p>Plus Two 2024 · 98.2%</p>
+                            </div>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                        <p class="review-text">
+                            "The daily notes and practice materials are pure gold. Everything is so well-organized that I never felt overwhelmed. The teachers explain concepts with real clarity."
+                        </p>
+                        <div class="review-meta">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Verified Student</span>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-header">
+                            <img src="https://i.pravatar.cc/150?img=13" alt="Aditya" class="reviewer-avatar" loading="lazy" width="48" height="48">
+                            <div class="reviewer-info">
+                                <h4>Aditya Nair</h4>
+                                <p>PSC 2024 · Selected LDC</p>
+                            </div>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                        <p class="review-text">
+                            "Current affairs updates and weekly tests kept me on track. The mock interviews were incredibly helpful. Foxbite doesn't just teach—they prepare you for success."
+                        </p>
+                        <div class="review-meta">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Verified Student</span>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-header">
+                            <img src="https://i.pravatar.cc/150?img=15" alt="Divya" class="reviewer-avatar" loading="lazy" width="48" height="48">
+                            <div class="reviewer-info">
+                                <h4>Divya Krishnan</h4>
+                                <p>NEET 2024 · Qualified</p>
+                            </div>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                        <p class="review-text">
+                            "The doubt clearance system is phenomenal. I could ask questions anytime and got detailed responses within hours. Teachers genuinely care about your understanding."
+                        </p>
+                        <div class="review-meta">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Verified Student</span>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-header">
+                            <img src="https://i.pravatar.cc/150?img=8" alt="Karthik" class="reviewer-avatar" loading="lazy" width="48" height="48">
+                            <div class="reviewer-info">
+                                <h4>Karthik Shetty</h4>
+                                <p>SSC CGL 2024 · Tier 2 Cleared</p>
+                            </div>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                        <p class="review-text">
+                            "Speed mathematics sessions transformed my calculation skills. The practice sets are exactly like real SSC patterns. Value for money is unmatched!"
+                        </p>
+                        <div class="review-meta">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Verified Student</span>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-header">
+                            <img src="https://i.pravatar.cc/150?img=20" alt="Sneha" class="reviewer-avatar" loading="lazy" width="48" height="48">
+                            <div class="reviewer-info">
+                                <h4>Sneha Pillai</h4>
+                                <p>Board Exams 2024 · 99%</p>
+                            </div>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                        <p class="review-text">
+                            "Chapter-wise tests and NCERT focus helped me build a rock-solid foundation. My confidence in exams grew exponentially thanks to Foxbite's systematic approach."
+                        </p>
+                        <div class="review-meta">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Verified Student</span>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-header">
+                            <img src="https://i.pravatar.cc/150?img=33" alt="Vishnu" class="reviewer-avatar" loading="lazy" width="48" height="48">
+                            <div class="reviewer-info">
+                                <h4>Vishnu Mohan</h4>
+                                <p>JEE Mains 2024 · 97.8%ile</p>
+                            </div>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                        <p class="review-text">
+                            "The study material quality is outstanding. Every concept is explained from basics to advanced. Teachers are available for personal guidance whenever needed."
+                        </p>
+                        <div class="review-meta">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Verified Student</span>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-header">
+                            <img src="https://i.pravatar.cc/150?img=45" alt="Meera" class="reviewer-avatar" loading="lazy" width="48" height="48">
+                            <div class="reviewer-info">
+                                <h4>Meera Das</h4>
+                                <p>Plus Two Commerce · 96%</p>
+                            </div>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                        <p class="review-text">
+                            "Accountancy seemed impossible until I joined Foxbite. The teachers break down complex topics into digestible parts. My scores improved by 30% in 3 months!"
+                        </p>
+                        <div class="review-meta">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Verified Student</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Everything you need to know about Foxbite Learning</p>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What makes Foxbite different from other platforms?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Foxbite is eligibility-based, meaning we focus on serious learners. We offer personalized mentorship, structured learning paths, and regular progress tracking. Unlike mass-market platforms, we maintain small batch sizes for quality attention and provide 24/7 doubt clearance support.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>How long do I have access to the course materials?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You get full access for one complete academic year or until your exam date (whichever is longer). All materials, including new content updates, practice tests, and live sessions, are included at no extra cost.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Are there any hidden charges or extra fees?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely not. We believe in complete transparency. The price you see is the total price you pay. There are no hidden fees, no surprise charges, and no mandatory add-ons.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Can I get personal doubt clarification?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! Every course includes unlimited personal doubt clearance. You can ask questions via our dedicated doubt portal, WhatsApp groups, or during live sessions. Our expert faculty responds within 24 hours.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What is your refund policy?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We offer a 7-day money-back guarantee. If you're not satisfied with the quality of teaching or course content within the first 7 days, we'll provide a full refund—no questions asked.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
