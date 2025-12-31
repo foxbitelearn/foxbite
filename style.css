@@ -456,12 +456,12 @@ body {
     font-size: 0.875rem;
     font-weight: 600;
     color: var(--accent-primary);
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .badge-dot {
-    width: 6px;
-    height: 6px;
+    width: 10px;
+    height: 10px;
     background: var(--accent-primary);
     border-radius: 50%;
     animation: pulse 2s ease-in-out infinite;
